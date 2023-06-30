@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./finance.css" />
+    <script src="./financial-inst.js" defer></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFaXNvUSNlqQoqlNBgCgppWcSeYxb5kDM"
+      defer></script>
+
+</head>
+
+<body>
+    <div id="infoContent" class="info_content">
+        <div class="map-popup">
+          <div class="map-popup-head">Performance <p>- Kelavarapalli</p>
+          </div>
+          <div class="amt-details">
+            <div class="details-sub">
+              <p>Total Amount Disbursed</p>
+              <p class="amt">₹121L</p>
+            </div>
+            <div class="details-sub">
+              <p>Total Amount Disbursed</p>
+              <p class="amt">₹121L</p>
+            </div>
+          </div>
+          <div class="map-popup-detalis">
+            <figure class="highcharts-figure" id="">
+              <div id="doughnut-container1"></div>
+            </figure>
+            <div class="seed-details">
+              <div class="Portfolio">
+                <span>
+                  <img src="./assets/Doty (1).png" width="16px">
+                  <p class="Port-name">Good Portfolio</p>
+                </span>
+                <p class="Port-amount">56.8%</p>
+              </div>
+              <div class="Portfolio">
+                <span>
+                  <img src="./assets/Doty (1).png" width="16px">
+                  <p class="Port-name">Good Portfolio</p>
+                </span>
+                <p class="Port-amount">56.8%</p>
+              </div>
+              <div class="Portfolio">
+                <span>
+                  <img src="./assets/Doty (1).png" width="16px">
+                  <p class="Port-name">Good Portfolio</p>
+                </span>
+                <p class="Port-amount">56.8%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // map marker chart
+
+document.addEventListener("DOMContentLoaded", function () {
+    var chart1 = new Highcharts.Chart({
+        credits: {
+            enabled: false
+        },
+        chart: {
+            type: 'pie',
+            renderTo: 'doughnut-container1',
+            width: 150
+        },
+        title: {
+            text: null
+        },
+        exporting: {
+            enabled: false // Disable chart export menu
+        },
+        tooltip: {
+            enabled: false // Disable the tooltip
+        },
+        legend: {
+            enabled: false // Remove the legend
+        },
+
+        plotOptions: {
+            pie: {
+                innerSize: '70%'
+            },
+            series: {
+                dataLabels: {
+                    enabled: false // Hide data labels
+                }
+            }
+        },
+        colors: ['#D2B51C', '#E7D792', '#F8EABA',],
+
+        series: [{
+            data: [
+                ['SSP', 44.2],
+                ['Corn Seeds', 26.6],
+                ['Urea', 20],
+            ]
+        }]
+    });
+});
+      </script>
+</body>
+
+</html>

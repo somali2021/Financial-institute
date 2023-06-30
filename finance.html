@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="./finance.css" />
+  <script src="./financial-inst.js" defer></script>
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFaXNvUSNlqQoqlNBgCgppWcSeYxb5kDM"
+    defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <header style="background-color: white; border-bottom: 1px solid #EEEEEE;">
+      <div class="auto-group-ebhd-LFY">
+        <img class="bharat-mandi-16-1-6pN" src="./assets/Bharat Mandi-16 1.png" />
+        <div class="frame-427319071-jMY">
+          <img class="next-cCN" src="./assets/ellipse-968-bg.png" />
+          <select id="areaDropdown">
+            <option value="1">NABSAMRUDDHI</option>
+            <option value="2">NABSAMRUDDHI</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <!-- contents -->
+    <section class="section-1">
+      <div class="auto-group-63or-Ben">
+        <div class="group-427319084-pSr">
+          <div class="group-427319131-U1c">
+            <div class="buyer-dashboard-bengaluru-karnataka-K2E">
+              <span class="buyer-dashboard-bengaluru-karnataka-K2E-sub-0">Financial Dashboard</span>
+              <span class="buyer-dashboard-bengaluru-karnataka-K2E-sub-1">( Bengaluru , Karnataka )</span>
+            </div>
+          </div>
+          <div class="auto-group-6drk-xFY">
+            <div class="group-427319132-GGE">
+              <div class="select-source-area-oot">Select Categories</div>
+              <select id="catDropdown">
+                <option value="1">All</option>
+                <option value="2">All</option>
+              </select>
+            </div>
+            <div class="group-427319132-GGE">
+              <div class="select-source-area-oot">Select Categories</div>
+              <select id="catDropdown">
+                <option value="1">All</option>
+                <option value="2">All</option>
+              </select>
+            </div>
+            <div class="group-427319132-GGE">
+              <div class="select-source-area-oot">Select Categories</div>
+              <select id="catDropdown">
+                <option value="1">All</option>
+                <option value="2">All</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="group-container">
+          <div class="group-div">
+            <div class="status-parent">
+              <div class="status">
+                <div class="loan-amount-disbursed-container">
+                  <p class="loan-amount">Loan Amount <br> Disbursed</p>
+                  <img alt="" src="./assets/right-arrow.png" width="6px">
+                </div>
+                <div class="l">
+                  <span class="financial-dashboard">₹721L</span>
+                  <div class="badge">
+                    <div class="text" style="font-size: 12px;">+11.01%</div>
+                    <img class="arrowrise-icon" alt="" src="./assets/ArrowRise.png" width="12px">
+                  </div>
+                </div>
+              </div>
+              <div class="status">
+                <div class="loan-amount-disbursed-container">
+                  <p class="loan-amount">Loan Amount <br> Disbursed</p>
+                  <img alt="" src="./assets/right-arrow.png" width="6px">
+                </div>
+                <div class="l">
+                  <span class="financial-dashboard">₹721L</span>
+                  <div class="badge">
+                    <div class="text" style="font-size: 12px;">+11.01%</div>
+                    <img class="arrowrise-icon" alt="" src="./assets/ArrowRise.png" width="12px">
+                  </div>
+                </div>
+              </div>
+              <div class="status">
+                <div class="loan-amount-disbursed-container">
+                  <p class="loan-amount">Loan Amount <br> Disbursed</p>
+                  <img alt="" src="./assets/right-arrow.png" width="6px">
+                </div>
+                <div class="l">
+                  <span class="financial-dashboard">₹721L</span>
+                  <div class="badge">
+                    <div class="text" style="font-size: 12px;">+11.01%</div>
+                    <img class="arrowrise-icon" alt="" src="./assets/ArrowRise.png" width="12px">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="status-group">
+              <div class="status">
+                <div class="current-outstanding">
+                  <p class="loan-amount">Current<br>Outstanding</p>
+                  <img alt="" src="./assets/right-arrow.png" width="6px">
+                </div>
+                <div class="l4">
+                  <span class="financial-dashboard">₹354L</span>
+                </div>
+              </div>
+              <div class="status">
+                <div class="current-outstanding">
+                  <p class="loan-amount">Current<br>Outstanding</p>
+                  <img alt="" src="./assets/right-arrow.png" width="6px">
+                </div>
+                <div class="l4">
+                  <span class="financial-dashboard">₹354L</span>
+                </div>
+              </div>
+              <div class="status">
+                <div class="current-outstanding">
+                  <p class="loan-amount">Current<br>Outstanding</p>
+                  <img alt="" src="./assets/right-arrow.png" width="6px">
+                </div>
+                <div class="l4">
+                  <span class="financial-dashboard">₹354L</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group-wrapper">
+            <p>Loan Disbursed vs Overdue</p>
+            <figure class="highcharts-figure" style="margin: 0; margin-top: 30px;">
+              <div id="container"></div>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="section-2">
+      <div class="loan-charts">
+        <p>Loans Distribution</p>
+        <figure class="highcharts-figure">
+          <div id="bar-container"></div>
+        </figure>
+      </div>
+      <div class="seed-charts">
+        <div class="seed-chart-head">
+          <p>Seed Loans</p>
+          <select id="talukDropdown">
+            <option value="1">Taluk-wise</option>
+            <option value="2">Taluk-wise</option>
+          </select>
+        </div>
+        <div class="seed-chart-detalis">
+          <figure class="highcharts-figure">
+            <div id="doughnut-container"></div>
+          </figure>
+          <div class="seed-details">
+            <div class="seed">
+
+              <span>
+                <img src="./assets/Dot2.png" width="16px">
+                <p class="seed-name">Tomato</p>
+              </span>
+              <p class="seed-amount">₹300k</p>
+
+            </div>
+            <div class="seed">
+              <span>
+                <img src="./assets/Dot2.png" width="16px">
+                <p class="seed-name">Tomato</p>
+              </span>
+              <p class="seed-amount">₹300k</p>
+
+            </div>
+            <div class="seed">
+              <span>
+                <img src="./assets/Dot2.png" width="16px">
+                <p class="seed-name">Tomato</p>
+              </span>
+              <p class="seed-amount">₹300k</p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="section-3">
+      <div class="Customer-head">
+        <p>Customer Status</p>
+        <span class="cust-dropdown">
+          <p>Filter</p>
+          <select id="CustomerDropdown">
+            <option value="1">Recent</option>
+            <option value="2">Recent</option>
+          </select>
+        </span>
+      </div>
+      <div class="group-parent">
+        <div class="group-wrapper">
+          <div class="mask-group-parent">
+            <img class="mask-group-icon" alt="" src="./assets//image 55.png" />
+
+            <div class="ravi-kumar-parent">
+              <div class="ravi-kumar">Ravi Kumar</div>
+              <div class="status-approved">
+                <span class="status-approved-txt-container">
+                  <span>Status: </span>
+                  <span class="approved">Approved</span>
+                </span>
+              </div>
+              <div class="loan-date-23-container">
+                <span style="color: rgba(203, 197, 197, 1)">Loan Date: </span>
+                <span class="may-2023">23 May 2023</span>
+              </div>
+            </div>
+            <div class="reports-parent">
+              <div class="loan-date-23-container">Reports</div>
+              <img class="next-icon" alt="" src="./assets/right-arrow.png" />
+            </div>
+          </div>
+          <div class="frame-wrapper">
+            <div class="frame-group">
+              <div class="farm-container">
+                <div class="applied-amount-parent">
+                  <div class="applied-amount">Applied Amount</div>
+                  <div class="k">
+                    <span>₹</span>
+                    <span class="k1">50k</span>
+                  </div>
+                </div>
+                <div class="credit-risk-parent">
+                  <div class="applied-amount">Credit Risk</div>
+                  <b class="low">Low</b>
+                </div>
+                <div class="credit-risk-parent">
+                  <div class="applied-amount">Yearly Income</div>
+                  <div class="rs-600000">Rs. 6,00,000</div>
+                </div>
+                <div class="purpose-parent">
+                  <div class="purpose">Purpose</div>
+                  <div class="input-purchase">Input Purchase</div>
+                </div>
+                <div class="applied-amount-parent">
+                  <div class="applied-amount">Land</div>
+                  <div class="acres">2 Acres</div>
+                </div>
+              </div>
+              <div class="frame-div">
+                <div class="disbursed-amount-parent">
+                  <div class="disbursed-amount">Disbursed Amount</div>
+                  <div class="bangalore">₹50k</div>
+                </div>
+                <div class="noof-emis-parent">
+                  <div class="disbursed-amount">No.Of EMI’s</div>
+                  <div class="div">0/6</div>
+                </div>
+                <div class="crop-parent">
+                  <div class="disbursed-amount">Crop</div>
+                  <div class="multi-crop">Multi Crop</div>
+                </div>
+                <div class="credit-score-parent">
+                  <div class="disbursed-amount">Credit Score</div>
+                  <div class="div1">800</div>
+                </div>
+                <div class="location-parent">
+                  <div class="disbursed-amount">Location</div>
+                  <div class="bangalore">Bangalore</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group-wrapper">
+          <div class="mask-group-parent">
+            <img class="mask-group-icon" alt="" src="./assets//image 55.png" />
+
+            <div class="ravi-kumar-parent">
+              <div class="ravi-kumar">Ravi Kumar</div>
+              <div class="status-approved">
+                <span class="status-approved-txt-container">
+                  <span>Status: </span>
+                  <span class="approved">Approved</span>
+                </span>
+              </div>
+              <div class="loan-date-23-container">
+                <span style="color: rgba(203, 197, 197, 1)">Loan Date: </span>
+                <span class="may-2023">23 May 2023</span>
+              </div>
+            </div>
+            <div class="reports-parent">
+              <div class="loan-date-23-container">Reports</div>
+              <img class="next-icon" alt="" src="./assets/right-arrow.png" />
+            </div>
+          </div>
+          <div class="frame-wrapper">
+            <div class="frame-group">
+              <div class="farm-container">
+                <div class="applied-amount-parent">
+                  <div class="applied-amount">Applied Amount</div>
+                  <div class="k">
+                    <span>₹</span>
+                    <span class="k1">50k</span>
+                  </div>
+                </div>
+                <div class="credit-risk-parent">
+                  <div class="applied-amount">Credit Risk</div>
+                  <b class="low">Low</b>
+                </div>
+                <div class="credit-risk-parent">
+                  <div class="applied-amount">Yearly Income</div>
+                  <div class="rs-600000">Rs. 6,00,000</div>
+                </div>
+                <div class="purpose-parent">
+                  <div class="purpose">Purpose</div>
+                  <div class="input-purchase">Input Purchase</div>
+                </div>
+                <div class="applied-amount-parent">
+                  <div class="applied-amount">Land</div>
+                  <div class="acres">2 Acres</div>
+                </div>
+              </div>
+              <div class="frame-div">
+                <div class="disbursed-amount-parent">
+                  <div class="disbursed-amount">Disbursed Amount</div>
+                  <div class="bangalore">₹50k</div>
+                </div>
+                <div class="noof-emis-parent">
+                  <div class="disbursed-amount">No.Of EMI’s</div>
+                  <div class="div">0/6</div>
+                </div>
+                <div class="crop-parent">
+                  <div class="disbursed-amount">Crop</div>
+                  <div class="multi-crop">Multi Crop</div>
+                </div>
+                <div class="credit-score-parent">
+                  <div class="disbursed-amount">Credit Score</div>
+                  <div class="div1">800</div>
+                </div>
+                <div class="location-parent">
+                  <div class="disbursed-amount">Location</div>
+                  <div class="bangalore">Bangalore</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group-wrapper">
+          <div class="mask-group-parent">
+            <img class="mask-group-icon" alt="" src="./assets//image 55.png" />
+
+            <div class="ravi-kumar-parent">
+              <div class="ravi-kumar">Ravi Kumar</div>
+              <div class="status-approved">
+                <span class="status-approved-txt-container">
+                  <span>Status: </span>
+                  <span class="approved">Approved</span>
+                </span>
+              </div>
+              <div class="loan-date-23-container">
+                <span style="color: rgba(203, 197, 197, 1)">Loan Date: </span>
+                <span class="may-2023">23 May 2023</span>
+              </div>
+            </div>
+            <div class="reports-parent">
+              <div class="loan-date-23-container">Reports</div>
+              <img class="next-icon" alt="" src="./assets/right-arrow.png" />
+            </div>
+          </div>
+          <div class="frame-wrapper">
+            <div class="frame-group">
+              <div class="farm-container">
+                <div class="applied-amount-parent">
+                  <div class="applied-amount">Applied Amount</div>
+                  <div class="k">
+                    <span>₹</span>
+                    <span class="k1">50k</span>
+                  </div>
+                </div>
+                <div class="credit-risk-parent">
+                  <div class="applied-amount">Credit Risk</div>
+                  <b class="low">Low</b>
+                </div>
+                <div class="credit-risk-parent">
+                  <div class="applied-amount">Yearly Income</div>
+                  <div class="rs-600000">Rs. 6,00,000</div>
+                </div>
+                <div class="purpose-parent">
+                  <div class="purpose">Purpose</div>
+                  <div class="input-purchase">Input Purchase</div>
+                </div>
+                <div class="applied-amount-parent">
+                  <div class="applied-amount">Land</div>
+                  <div class="acres">2 Acres</div>
+                </div>
+              </div>
+              <div class="frame-div">
+                <div class="disbursed-amount-parent">
+                  <div class="disbursed-amount">Disbursed Amount</div>
+                  <div class="bangalore">₹50k</div>
+                </div>
+                <div class="noof-emis-parent">
+                  <div class="disbursed-amount">No.Of EMI’s</div>
+                  <div class="div">0/6</div>
+                </div>
+                <div class="crop-parent">
+                  <div class="disbursed-amount">Crop</div>
+                  <div class="multi-crop">Multi Crop</div>
+                </div>
+                <div class="credit-score-parent">
+                  <div class="disbursed-amount">Credit Score</div>
+                  <div class="div1">800</div>
+                </div>
+                <div class="location-parent">
+                  <div class="disbursed-amount">Location</div>
+                  <div class="bangalore">Bangalore</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group-wrapper">
+          <div class="mask-group-parent">
+            <img class="mask-group-icon" alt="" src="./assets//image 55.png" />
+
+            <div class="ravi-kumar-parent">
+              <div class="ravi-kumar">Ravi Kumar</div>
+              <div class="status-approved">
+                <span class="status-approved-txt-container">
+                  <span>Status: </span>
+                  <span class="approved">Approved</span>
+                </span>
+              </div>
+              <div class="loan-date-23-container">
+                <span style="color: rgba(203, 197, 197, 1)">Loan Date: </span>
+                <span class="may-2023">23 May 2023</span>
+              </div>
+            </div>
+            <div class="reports-parent">
+              <div class="loan-date-23-container">Reports</div>
+              <img class="next-icon" alt="" src="./assets/right-arrow.png" />
+            </div>
+          </div>
+          <div class="frame-wrapper">
+            <div class="frame-group">
+              <div class="farm-container">
+                <div class="applied-amount-parent">
+                  <div class="applied-amount">Applied Amount</div>
+                  <div class="k">
+                    <span>₹</span>
+                    <span class="k1">50k</span>
+                  </div>
+                </div>
+                <div class="credit-risk-parent">
+                  <div class="applied-amount">Credit Risk</div>
+                  <b class="low">Low</b>
+                </div>
+                <div class="credit-risk-parent">
+                  <div class="applied-amount">Yearly Income</div>
+                  <div class="rs-600000">Rs. 6,00,000</div>
+                </div>
+                <div class="purpose-parent">
+                  <div class="purpose">Purpose</div>
+                  <div class="input-purchase">Input Purchase</div>
+                </div>
+                <div class="applied-amount-parent">
+                  <div class="applied-amount">Land</div>
+                  <div class="acres">2 Acres</div>
+                </div>
+              </div>
+              <div class="frame-div">
+                <div class="disbursed-amount-parent">
+                  <div class="disbursed-amount">Disbursed Amount</div>
+                  <div class="bangalore">₹50k</div>
+                </div>
+                <div class="noof-emis-parent">
+                  <div class="disbursed-amount">No.Of EMI’s</div>
+                  <div class="div">0/6</div>
+                </div>
+                <div class="crop-parent">
+                  <div class="disbursed-amount">Crop</div>
+                  <div class="multi-crop">Multi Crop</div>
+                </div>
+                <div class="credit-score-parent">
+                  <div class="disbursed-amount">Credit Score</div>
+                  <div class="div1">800</div>
+                </div>
+                <div class="location-parent">
+                  <div class="disbursed-amount">Location</div>
+                  <div class="bangalore">Bangalore</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-4">
+      <p class="heading">Area Wise Performance</p>
+      <div class="area-section">
+        <div id="mapCanvas"></div>
+        <div id="infoContent" class="info_content">
+          <div class="map-popup">
+            <div class="map-popup-head">Performance <p>- Kelavarapalli</p>
+            </div>
+            <div class="amt-details">
+              <div class="details-sub">
+                <p>Total Amount Disbursed</p>
+                <p class="amt">₹121L</p>
+              </div>
+              <div class="details-sub">
+                <p>Total Amount Disbursed</p>
+                <p class="amt">₹121L</p>
+              </div>
+            </div>
+            <div class="map-popup-detalis">
+              <figure class="highcharts-figure" id="">
+                <div id="map-doughnut-container"></div>
+              </figure>
+              <div class="seed-details">
+                <div class="Portfolio">
+                  <span>
+                    <img src="./assets/Doty (1).png" width="16px">
+                    <p class="Port-name">Good Portfolio</p>
+                  </span>
+                  <p class="Port-amount">56.8%</p>
+                </div>
+                <div class="Portfolio">
+                  <span>
+                    <img src="./assets/Doty (1).png" width="16px">
+                    <p class="Port-name">Good Portfolio</p>
+                  </span>
+                  <p class="Port-amount">56.8%</p>
+                </div>
+                <div class="Portfolio">
+                  <span>
+                    <img src="./assets/Doty (1).png" width="16px">
+                    <p class="Port-name">Good Portfolio</p>
+                  </span>
+                  <p class="Port-amount">56.8%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+</div>
+
+
+</div>
+</body>
+
+</html>
